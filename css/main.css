@@ -8,42 +8,38 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-
-.navbar {
+body .navbar .container {
   background-color: white;
   padding: 1em;
-}
-.navbar nav {
-  display: none;
-}
-.navbar .container {
   display: flex;
   place-content: space-between;
 }
-.navbar .logo {
+body .navbar .container .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-.navbar .logo span {
+body .navbar .container .logo span {
   color: var(--primary-color);
 }
-
-.hero {
+body .navbar .container nav {
+  display: none;
+}
+body .hero .container {
   background-color: var(--primary-color);
   padding-top: 3em;
 }
-.hero .left-col {
+body .hero .container .left-col {
   text-align: center;
 }
-.hero .left-col h1 {
+body .hero .container .left-col h1 {
   margin: 0.2em 0.5em 0.5em 0.5em;
   font-size: 2.5em;
 }
-.hero .left-col h1 span {
+body .hero .container .left-col h1 span {
   color: white;
 }
-.hero .subhead {
+body .hero .container .left-col .subhead {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -51,11 +47,7 @@ body {
   font-weight: bold;
   font-size: 1.2em;
 }
-.hero img {
-  width: 100%;
-  display: block;
-}
-.hero .hero-cta {
+body .hero .container .left-col .hero-cta {
   background-color: white;
   color: var(--primary-color);
   text-decoration: none;
@@ -65,31 +57,88 @@ body {
   font-weight: bold;
   margin-bottom: 3em;
 }
-
-.about-us {
-  padding: 1em;
+body .hero .container img {
+  width: 100%;
+  display: block;
 }
-.about-us .container h1 {
+body .about-us .container {
+  padding: 1em 1em 3em 1em;
+}
+body .about-us .container .left-col h1 {
   color: var(--primary-color);
   font-weight: lighter;
   font-size: 3em;
   margin: 1em 0 0 0;
 }
-.about-us .container .tagline {
+body .about-us .container .left-col .tagline {
   font-weight: bold;
   font-size: 2em;
   margin: 0.5em 0;
 }
-.about-us .container .info-top, .about-us .container .info-bottom {
+body .about-us .container .left-col .info-top, body .about-us .container .left-col .info-bottom {
   font-size: 0.9em;
   margin: 1.2em 0;
 }
-.about-us .container .right-col {
+body .about-us .container .right-col {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
-.about-us .container .right-col img {
+body .about-us .container .right-col img {
   width: 25%;
   margin: 1em;
+}
+body .our-chefs .container {
+  padding: 1em 0 0 0;
+  background-color: var(--primary-color);
+}
+body .our-chefs .container .header {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+body .our-chefs .container .tagline {
+  color: white;
+  padding: 1em;
+  font-size: large;
+  font-weight: light;
+  text-align: center;
+}
+body .our-chefs .container .chef-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+body .our-chefs .container .chef-card-container .chef-card {
+  background-color: white;
+  margin: 2em;
+  text-align: center;
+  border-radius: 5px;
+}
+body .our-chefs .container .chef-card-container .chef-card img {
+  width: 96%;
+  margin: 0.5em;
+  border-radius: 5px;
+}
+body footer .container {
+  padding: 1em;
+}
+body footer .container .socials {
+  text-align: center;
+}
+body footer .container .socials a img {
+  width: 2em;
+  margin: 3em 1em 1em 1em;
+}
+body footer .container h2 {
+  text-align: center;
+}
+body footer .container h2 span {
+  color: var(--primary-color);
+}
+body footer .container p {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
 }/*# sourceMappingURL=main.css.map */
