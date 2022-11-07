@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007af3;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: white;
+    padding: 1em;
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.hero {
+    .left-col {
+        text-align: center;
+
+        h1 {
+            span {
+                color: white;
+            }
+            margin: 0.2em 0.5em 0.5em 0.5em;
+            font-size: 2.5em;
+        }
+
+    }
+
+    background-color: var(--primary-color);
+
+    padding-top: 3em;
+    
+    .subhead {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+    .hero-cta {
+        background-color: white;
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 1em 1em;
+        display: inline-block;
+        border-radius: 0.5em;
+        font-weight: bold;
+        margin-bottom: 3em;
+    }
+}
+
+.about-us {
+    padding: 1em;
+    .container{
+        h1 {
+            color: var(--primary-color);
+            font-weight: lighter;
+            font-size: 3em;
+            margin: 1em 0 0 0;
+        }
+        .tagline {
+            font-weight: bold;
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+
+        .info-top, .info-bottom {
+            font-size: 0.9em;
+            margin: 1.2em 0;
+        }
+        .right-col {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            
+            img {
+                width: 25%;
+                margin: 1em;
+            }
+        }
+    }
+}
